@@ -13,7 +13,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #ffffff;
-    background-color: #1a2e1a;
+    background-color: #1a202c;
 }
 
 .container {
@@ -27,7 +27,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(26, 46, 26, 0.95);
+    background: rgba(26, 32, 44, 0.95);
     backdrop-filter: blur(20px);
     z-index: 1000;
     padding: 1rem 0;
@@ -59,7 +59,7 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #d1fae5;
+    color: #e2e8f0;
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
@@ -94,7 +94,7 @@ body {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #d1fae5;
+    background-color: #e2e8f0;
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -102,7 +102,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 100px 0 60px;
-    background: linear-gradient(135deg, #1a2e1a 0%, #2d4a2d 100%);
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
     color: #ffffff;
     min-height: 70vh;
     display: flex;
@@ -118,7 +118,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23d1fae5" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23e2e8f0" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
     opacity: 0.3;
 }
 
@@ -143,20 +143,20 @@ body {
 }
 
 .highlight {
-    color: #86efac;
+    color: #63b3ed;
 }
 
 .hero-subtitle {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #ecfdf5;
+    color: #e2e8f0;
 }
 
 .hero-description {
     font-size: 1rem;
     margin-bottom: 2rem;
-    color: #d1fae5;
+    color: #cbd5e0;
     line-height: 1.7;
 }
 
@@ -178,15 +178,15 @@ body {
 }
 
 .btn-primary {
-    background: #86efac;
-    color: #1a2e1a;
-    box-shadow: 0 2px 8px rgba(134, 239, 172, 0.3);
+    background: #3182ce;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(49, 130, 206, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(134, 239, 172, 0.4);
-    background: #6ee7b7;
+    box-shadow: 0 4px 16px rgba(49, 130, 206, 0.4);
+    background: #2c5aa0;
 }
 
 .btn-secondary {
@@ -197,7 +197,7 @@ body {
 
 .btn-secondary:hover {
     background: #ffffff;
-    color: #1a2e1a;
+    color: #2d3748;
     transform: translateY(-2px);
 }
 
@@ -245,14 +245,14 @@ body {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: #86efac;
+    background: #63b3ed;
     border-radius: 2px;
 }
 
 /* Projects Section */
 .projects {
     padding: 60px 0;
-    background: #2d4a2d;
+    background: #2d3748;
 }
 
 .projects-grid {
@@ -263,7 +263,7 @@ body {
 }
 
 .project-card {
-    background: #3a5f3a;
+    background: #4a5568;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
@@ -278,7 +278,7 @@ body {
 .project-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
-    background: #4a6f4a;
+    background: #718096;
 }
 
 .project-card::before {
@@ -288,7 +288,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: #86efac;
+    background: #63b3ed;
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -300,11 +300,11 @@ body {
 .project-image {
     width: 100%;
     height: 180px;
-    background: linear-gradient(135deg, #86efac, #6ee7b7);
+    background: linear-gradient(135deg, #e2e8f0, #cbd5e0);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #4a5568;
     font-size: 2.5rem;
     position: relative;
     overflow: hidden;
@@ -338,7 +338,7 @@ body {
 }
 
 .project-description {
-    color: #d1fae5;
+    color: #e2e8f0;
     margin-bottom: 1.2rem;
     line-height: 1.6;
     font-size: 0.95rem;
@@ -351,8 +351,8 @@ body {
 }
 
 .project-tag {
-    background: #4a6f4a;
-    color: #ecfdf5;
+    background: #718096;
+    color: #f7fafc;
     padding: 5px 12px;
     border-radius: 12px;
     font-size: 0.8rem;
@@ -362,15 +362,15 @@ body {
 }
 
 .project-tag:hover {
-    background: #86efac;
-    color: #1a2e1a;
-    border-color: #86efac;
+    background: #63b3ed;
+    color: #ffffff;
+    border-color: #63b3ed;
 }
 
 /* Contact Section */
 .contact {
     padding: 40px 0;
-    background: #1a2e1a;
+    background: #1a202c;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -389,7 +389,7 @@ body {
 
 .contact-info p {
     font-size: 1rem;
-    color: #d1fae5;
+    color: #e2e8f0;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -405,7 +405,7 @@ body {
     align-items: center;
     gap: 0.8rem;
     padding: 0.8rem 1rem;
-    background: #2d4a2d;
+    background: #2d3748;
     border-radius: 12px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
@@ -415,20 +415,20 @@ body {
 .contact-method:hover {
     transform: translateY(-2px);
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
-    border-color: #86efac;
-    background: #3a5f3a;
+    border-color: #63b3ed;
+    background: #4a5568;
 }
 
 .contact-method i {
     font-size: 1.1rem;
-    color: #86efac;
+    color: #63b3ed;
     width: 20px;
 }
 
 /* Footer */
 .footer {
-    background: #1a2e1a;
-    color: #d1fae5;
+    background: #1a202c;
+    color: #e2e8f0;
     text-align: center;
     padding: 1.5rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -439,13 +439,13 @@ body {
     .hamburger {
         display: flex;
     }
-
+    
     .nav-menu {
         position: fixed;
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: #2d4a2d;
+        background-color: #2d3748;
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -453,30 +453,30 @@ body {
         padding: 2rem 0;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
-
+    
     .nav-menu.active {
         left: 0;
     }
-
+    
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
     }
-
+    
     .hero-title {
         font-size: 2.2rem;
     }
-
+    
     .hero-avatar {
         width: 180px;
         height: 180px;
     }
-
+    
     .hero-buttons {
         justify-content: center;
     }
-
+    
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -486,15 +486,15 @@ body {
     .hero-title {
         font-size: 1.8rem;
     }
-
+    
     .hero-subtitle {
         font-size: 1.1rem;
     }
-
-    .project-section-title {
+    
+    .section-title {
         font-size: 1.8rem;
     }
-
+    
     .btn {
         padding: 10px 20px;
         font-size: 0.9rem;
@@ -503,9 +503,9 @@ body {
 
 /* Project Page Styles */
 .project-hero {
-    padding: 120px 0 80px;
-    background: linear-gradient(135deg, #1a2e1a 0%, #2d4a2d 100%);
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
     color: #ffffff;
+    padding: 120px 0 60px;
     text-align: center;
 }
 
@@ -518,76 +518,79 @@ body {
 
 .project-hero p {
     font-size: 1.2rem;
-    color: #d1fae5;
+    color: #e2e8f0;
     max-width: 600px;
-    margin: 0 auto 2rem;
-    line-height: 1.6;
+    margin: 0 auto;
 }
 
 .back-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 12px 24px;
-    background: #86efac;
-    color: #1a2e1a;
-    text-decoration: none;
+    display: inline-block;
+    background: #3182ce;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
     border-radius: 8px;
+    text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .back-button:hover {
+    background: #2c5aa0;
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(134, 239, 172, 0.4);
-    background: #6ee7b7;
 }
 
 .project-page-content {
-    padding: 80px 0;
     background: #ffffff;
-    color: #1a2e1a;
+    color: #2d3748;
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 2rem;
 }
 
 .project-section {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px 20px;
+}
+
+.project-section + .project-section {
+    margin-top: 0;
+    padding-top: 10px;
 }
 
 .project-section h2 {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: #1a2e1a;
-    border-bottom: 3px solid #86efac;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+    border-bottom: 3px solid #63b3ed;
     padding-bottom: 0.5rem;
 }
 
 .project-section h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin: 2rem 0 1rem;
-    color: #2d4a2d;
+    margin: 0.5rem 0 0.3rem;
+    color: #4a5568;
 }
 
 .project-section p {
     font-size: 1.1rem;
     line-height: 1.7;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     color: #4a5568;
 }
 
 .project-section ul {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     padding-left: 1.5rem;
 }
 
 .project-section li {
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     color: #4a5568;
 }
 
@@ -603,7 +606,7 @@ body {
     justify-content: center;
     color: white;
     font-size: 3rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -611,7 +614,7 @@ body {
     width: 160%;
     max-width: 1200px;
     height: 525px;
-    margin: 2rem 0;
+    margin: 1rem 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -627,7 +630,7 @@ body {
     width: 155%;
     max-width: 1300px;
     height: 400px;
-    margin: 2rem 0;
+    margin: 1rem 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -643,7 +646,7 @@ body {
     width: 100%;
     max-width: 700px;
     height: 400px;
-    margin: 2rem 0;
+    margin: 1rem 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -659,7 +662,7 @@ body {
     width: 90%;
     max-width: 515px;
     height: 600px;
-    margin: 2rem 0;
+    margin: 1rem 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -675,7 +678,7 @@ body {
     width: 100%;
     max-width: 770px;
     height: 600px;
-    margin: 2rem 0;
+    margin: 1rem 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -689,9 +692,25 @@ body {
 
 .project-image-scouting {
     width: 170%;
-    max-width: 1350px;
-    height: 400px;
-    margin: 2rem 0;
+    max-width: 1300px;
+    height: 525px;
+    margin: 1rem 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-hitter-long {
+    width: 170%;
+    max-width: 1300px;
+    height: 600px;
+    margin: 1rem 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -705,25 +724,9 @@ body {
 
 .project-image-hitter {
     width: 170%;
-    max-width: 1350px;
-    height: 350px;
-    margin: 2rem 0;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.project-image-hitter-2 {
-    width: 170%;
-    max-width: 1350px;
-    height: 250px;
-    margin: 2rem 0;
+    max-width: 1300px;
+    height: 525px;
+    margin: 1rem 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -737,9 +740,9 @@ body {
 
 .project-image-features {
     width: 100%;
-    max-width: 680px;
+    max-width: 600px;
     height: 400px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -751,8 +754,8 @@ body {
 .project-image-report {
     width: 140%;
     max-width: 1000px;
-    height: 730px;
-    margin: 2rem 0;
+    height: 600px;
+    margin: 1rem 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -768,7 +771,7 @@ body {
     width: 130%;
     max-width: 900px;
     height: 400px;
-    margin: 2rem 0;
+    margin: 1rem 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -782,9 +785,9 @@ body {
 
 .project-image-predictor {
     width: 100%;
-    max-width: 650px;
+    max-width: 600px;
     height: 400px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -794,10 +797,10 @@ body {
 }
 
 .project-image-xbatb {
-    width: 130%;
+    width: 150%;
     max-width: 1300px;
     height: 400px;
-    margin: 2rem 0;
+    margin: 1rem 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -813,7 +816,7 @@ body {
     width: 135%;
     max-width: 1000px;
     height: 350px;
-    margin: 2rem 0;
+    margin: 1rem 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -849,39 +852,36 @@ body {
 
 /* Project Links */
 .project-links {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 3rem;
-    flex-wrap: wrap;
+    margin: 1rem 0 2rem 0;
+    text-align: center;
 }
 
 .driveline-link {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
     flex-wrap: wrap;
 }
 
 .project-links a,
 .driveline-link a {
     padding: 12px 24px;
-    background: #86efac;
-    color: #1a2e1a;
+    background: #3182ce;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(134, 239, 172, 0.3);
+    box-shadow: 0 2px 8px rgba(49, 130, 206, 0.3);
 }
 
 .project-links a:hover,
 .driveline-link a:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(134, 239, 172, 0.4);
-    background: #6ee7b7;
+    box-shadow: 0 4px 16px rgba(49, 130, 206, 0.4);
+    background: #2c5aa0;
 }
 
 /* Tech Stack */
