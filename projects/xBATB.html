@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xBA and xTB (SLG)</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>NT</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="container">
+            <a href="../index.html#projects" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            <h1>xBA and xTB (SLG)</h1>
+            <p>
+                Simple KNN model that predicts the probability of a batted ball being a hit (xBA) or a single, double, triple, or home run (xTB) on predictos Launch Angle and Exit Velocity.
+            </p>
+        </div>
+    </section>
+
+    <section class="project-page-content">
+        <div class="project-section">
+            <h2>xBA and xTB Model</h2>
+            <p>
+                Expected Batting Average (xBA) and Expected Total Bases or SLG (xTB) are two metrics that are used to evaluate the quality of a hitter's performance based on their launch angle and exit velocity,
+                ignoring defense and park effects. The model is a simple KNN model that with Optuna to tune the hyperparameters. The model was trained on 2022-2025 college Trackman data. The graphs below can
+                show the expected outcome of a batter ball based on the launch angle and exit velocity in college baseball.
+            </p>
+            <div class="project-image-xbatb">
+                <img src="../images/xTB.png" alt="xTB Model">
+            </div>
+            <div class="project-image-xbatb">
+                <img src="../images/xBA.png" alt="xBA and xTB Model">
+            </div>
+        </div>
+            
+        <div class="project-links">
+            <a href="https://github.com/nicktoohey/xTB_xBA" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> View Code
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 

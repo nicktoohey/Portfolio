@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Stuff+</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>NT</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="container">
+            <a href="../index.html#projects" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            <h1>Stuff+</h1>
+            <p>
+                Developed a college baseball Stuff+ model to predict the expected run value of a pitch from its metrics, and designed post-game Stuff reports for the Springfield Drifters (WCL) to support player development for coaches and athletes.
+            </p>
+        </div>
+    </section>
+
+    <section class="project-page-content">
+        <div class="project-section">
+            <h2>Stuff+ Model</h2>
+            <p>
+                Used XGBoost Regression to predict the expected run value of a pitch based on Velocity, IVB, HB, Spin Rate, Spin Axis, Release Height, 
+                Release Side, Extension, adjusted Vertical and Horizontal Approach Angle, Arm Angle, and velo/IVB/HB difference from primary FB. Optuna
+                package was used to tune the hyperparameters of the model. Trained using college Trackman data from 2023-2025. Created Post-Game Reports
+                to send out to pitchers and coaches to assist with player development during the summer season and track progression. Developed a blob tool to
+                evaluate how the model grades on average with a certain velocity and release height range and also compare how the model grades with arm
+                angle as a predictor vs no arm angle predictor.
+            </p>
+        </div>
+        <div class="project-image-features">
+            <img src="../images/features.png" alt="Stuff+ Model">
+        </div>
+        <div class="project-section">
+            <h2>Post-Game Reports</h2>
+        </div>
+        <div class="project-image-report">
+            <img src="../images/StuffReport.png" alt="Stuff+ Reports">
+        </div>
+        <div class="project-section">
+            <h2>Blob Tool</h2>
+        </div>
+        <div class="project-image-blob">
+            <img src="../images/StuffBlob.png" alt="Stuff+ Blob Tool">
+        </div>
+    </section>
+
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsenal+ Dashboard</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>NT</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="container">
+            <a href="../index.html#projects" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            <h1>Arsenal+ Dashboard</h1>
+            <p>
+                Arsenal+, Mix+, Match+ dashboard to evaluate induvial pitcher arsenals, overall arsenal leaderboards, induvidual pitch mix+ and match+ leaderboards,
+                and an editor to create and adjust arsenals, allowing users to see how mix-and-match metrics change in real time
+            </p>
+        </div>
+    </section>
+
+    <section class="project-page-content">
+        <div class="project-section">
+            <h2>Arsenal+, Mix+ and Match+</h2>
+            <p>
+                Arsenal+, Mix+ and Match+ are metrics developed by Driveline Baseball to evaluate pitcher arsenals. Using the trajectory of a pitch,
+                Driveline showed how you can calculate the mix+ (breadth) and match+ (depth) of individual pitches and overall arsenals. For example. a Curveball or
+                Sweeper with generally add breadth to an arsenal improving the mix+ score while a cutter or slider with generally add depth to an arsenal improving 
+                the match+ score. From the Mix+ and Match+ metrics you can calculate an overall Arsenal+ metric. All metrics have a mean of 100 with a standard deviation of 20.
+            </p>
+        </div>
+        <div class="driveline-link">
+            <a href="https://www.youtube.com/watch?v=OdL6dafOArc&t=855s" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i> Driveline Video
+            </a>
+        </div>
+        <div class="project-section">
+            <h2>Arsenal Leaderboard</h2>
+        </div>
+        <div class="project-image-arsenal">
+            <img src="../images/ArsenalLeaderboard.jpg" alt="Arsenal Leaderboard">
+        </div>
+        <div class="project-section">
+            <p>
+               The leaderboard page allows you to see pitchers in NCAA DI with the highest graded arsenal+, mix+ or match+ scores. You can filter by pitcher,
+                minimum pitches, team, conference and conference tier. You can also sort by arsenal+, mix+ or match+ score, and by pitcher name. All the data in
+                the picture above is filler data for the demo version.
+            </p>
+        </div>
+        <div class="project-section">
+            <h2>Pitch Leaderboard</h2>
+        </div>
+        <div class="project-image-arsenal">
+            <img src="../images/PitchLeaderboard.png" alt="Arsenal Editor">
+        </div>
+        <div class="project-section">
+            <p>
+                The pitch leaderboard allows you to see the top individual pitches by Arsenal+, Mix+ and Match+ scores. You can filter by pitcher, pitch type,
+                minimum pitches, team, conference and conference tier. You can also sort by arsenal+, mix+ or match+ score, and by pitch name. All the data in
+                the picture above is filler data for the demo version.
+            </p>
+        </div>
+        <div class="project-section">
+            <h2>Arsenal Explorer</h2>
+        </div>
+        <div class="project-image-arsenal">
+            <img src="../images/ArsenalExplorer.png" alt="Arsenal Explorer">
+        </div>
+        <div class="project-section">
+            <p>
+                The Arsenal Explorer allows you to search by pitcher and see their arsenal, mix, and match metrics. The page shows induvidual arsenal metrics
+                of each pitch as well as the overall arsenal metrics. It also shows the mix, match and arsenal scores for each pitch pairing in the arsenal. The
+                graphs at the bottom show a 2D pitch movement plot on the right and the 3D interactive pitch trajectory plot on the left. 
+            </p>
+        </div>
+        <div class="project-section">
+            <h2>Arsenal Editor</h2>
+        </div>
+        <div class="project-image-arsenal">
+            <img src="../images/ArsenalEditor.png" alt="Arsenal Editor">
+        </div>
+        <div class="project-section">
+            <p>
+                The Arsenal Editor page allows you to create your own arsenal and see how the mix, match and arsenal metrics change in real time. You can add, remove,
+                and edit pitches to your liking. The editor page will have the same elements as the Arsenal Explorer page.
+            </p>
+        </div>
+        <div class="project-links">
+            <a href="https://goducks.com/sports/baseball" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i> Demo Coming Soon
+            </a>
+            <a href="https://github.com/nicholastoohey/ecommerce-platform" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> View Code
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undergraduate Thesis</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>NT</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="container">
+            <a href="../index.html#projects" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            <h1>Undergraduate Thesis</h1>
+            <p>Evaluating and predicting pitcher-hitter matchups in college baseball using pitch accuracy data collected from Oregon home games and scrimmages</p>
+        </div>
+    </section>
+
+    <section class="project-page-content">
+        <div class="project-section">
+            <h2>Abstract</h2>
+            <p>
+                The goal of this project is to optimize and evaluate pitcher-hitter matchups using pitch data from both the hitter and pitcher, 
+                as well as pitch accuracy data collected from University of Oregon Division I baseball pitchers. Using my knowledge as a manager 
+                for the team and my relationship with the coaching staff and players, I (with the help of my coworkers) have been able to make a 
+                program that can track the catcher's setup location on a pitch-by-pitch basis. I can then assign each pitch to a zone (inside, outside, 
+                up, or down) based on this catcher's setup location. Using NCAA Trackman data from 2022 onward, we can evaluate hitter performance in 
+                Run Value (RV) for each pitch type and location split by handedness. Using the same data, we can model the expected RV of a pitcher's
+                pitches based on pitch metrics and pitch location. By overlaying these RVs by location, we can identify zones where the hitter is weakest, 
+                combined with where the pitcher is strongest. Then, using the accuracy data, we can estimate the probability of a pitcher successfully 
+                hitting these zones, while punishing for hitting a "hot zone" (where the hitter is strong and the pitcher is weaker) to create a 
+                matchup metric for each pitch and ultimately the pitcher-hitter pairing. Using this approach, we can optimize both pitch selection and 
+                inform tactical substitutions in high-leverage situations. 
+            </p>
+        </div>
+        <div class="project-section">
+            <h2>Pitch Command Tracker</h2>
+        </div>
+        <div class="project-image-pct">
+            <img src="../images/PCT.png" alt="PCT">
+        </div>
+        <div class="project-section">
+            <p>
+                During all Oregon Home games, a member of our data analytics would use this program to track the setup location of the catcher's glove for every pitch
+                from an Oregon Pitcher. The tagger would use a camera for the video program BATS set up in centerfield to get a clear view of the catcher on every pitch.
+                After the game I saved the data as a csv and merged it onto the trackman game csv by pitch number for accurate pitch tags and pitch locations.
+            </p>
+        </div>
+        <div class="project-section">
+            <h2>Inferring Intended Zone</h2>
+        </div>
+        <div class="project-image-wide">
+            <img src="../images/IntendedZone.png" alt="AssigningZones">
+        </div>
+        <div class="project-section">
+            <p>
+                Using the data from the PCT, I was able to infer the intended zone of the pitch based on the catcher's setup location. To do this, I created
+                a simple dashboard using Dash by Plotly to visualize the data. For each pitcher you can filter by zone and the batter's handedness and see 
+                where the catcher set up for each pitch vs where the pitch was thrown. You can click on any pitch from each plot to highlight the same pitch
+                on the other plot as shown by the red dot on the right plot. Using this dashboard, my knowledge of Oregon's pitchers and how they like to attack 
+                hitters, and extensive meetings with members of the coaching staff where we went over every pitch from each pitcher, I was able to infer the intended 
+                zone of each pitch.
+            </p>
+        </div>
+        <div class="project-section">
+            <h2>Evaluating Pitcher-Hitter Matchups</h2>
+            <p>
+                By using historic trackman data, we can evaluate hitter performance in Run Value (RV) for each pitch type and location split by handedness. 
+                Using the same data, we can model the expected RV of a pitcher's pitches based on pitch metrics and pitch location. 
+            </p>
+        </div>
+        <div class="project-image-long">
+            <img src="../images/HitterHeatmap.png" alt="HitterRV">
+        </div>
+        <div class="project-image-long">
+            <img src="../images/PitcherHeatmap.png" alt="PitcherRV">
+        </div>
+        <div class="project-section">
+            <p>
+                By overlaying these RVs by location, 
+                we can identify zones where the hitter is weakest, combined with where the pitcher is strongest. I split the strikezone into 17 different zones, a typical 9
+                hole inside the strike zone with 8 zones outside the strike zone. The run values are scaled to a mean of 100 with a standard deviation of 20 for readability.
+            </p>
+        </div>
+        <div class="project-image-skinny">
+            <img src="../images/CombinedHeatmap.png" alt="CombinedHeatmap">
+        </div>
+        <div class="project-section">
+            <h2>Incorporating Pitch Accuracy</h2>
+            <p>
+                Using the pitch accuracy data, we can estimate the probability of a pitcher successfully hitting these zones. We can also punish for hitting a 
+                "hot zone" (where the hitter is strong and the pitcher is weaker) to create a matchup metric for each pitch and ultimately the pitcher-hitter pairing. For every zone
+                where the combined RV (in the strike zone we would never try and throw balls) is under 100 or the lowest combined RV zone (if none are under 100), I'll take a KDE 
+                of pitches where that is the intended zone, then I'll bin the density of each of the 17 zones and multiply is by the combined RV of that zone. Then you can sum
+                it all together to a matchup score for each pitch where accuracy is included on the same 100 mean scale that we scaled the RV to. 
+            </p>
+        </div>
+        <div class="project-image-accuracy">
+            <img src="../images/AccuracyOverlay.png" alt="AccuracyOverlay">
+        </div>
+        <div class="project-section">
+            <p>
+                To keep pitch calling simple for college pitchers where the command isn't quite where it is in the pros, instead of having a pitcher try and hit one of the 9 zones,
+                they usually just call inside, outside, up, or down. Despite this I still decided to use 9 zones because pitchers and hitters can perform drastically different 
+                on pitches up and away vs down and away, even though both the pitches are away. If a weak combined zone is down and away but a strong zone is up and away,
+                the metrics will favor the pitcher who tends to keep their pitches low when throwing away vs pitchers who let their pitches ride up.
+            </p>
+        </div>
+        <div class="project-section">
+            <h2>Applications</h2>
+            <p>
+                This project can be used in a variety of ways for a college baseball team. 1. Advance Scouting Applications: Pitchers can recieve a full breakdown of every hitter's
+                strengths and weaknesses and how it aligns with their own arsenal, strengths, and weaknesses. Pitchers can use this to inform pitch selection and create an attack plan
+                to get batters out. 2. Tactical Substitutions: Managers can use the matchup metrics to inform tactical substitutions in high-leverage situations. 3. Player Development:
+                Pitchers and coaches can use the metrics to identify which pitches and zones their accuracy is weakest and what is hurting them the most in their matchups 
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 
