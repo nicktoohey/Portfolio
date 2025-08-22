@@ -611,13 +611,10 @@ body {
 }
 
 .project-image-arsenal {
-    width: 160%;
-    max-width: 1200px;
-    height: 525px;
-    margin: 1rem 0;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -627,13 +624,10 @@ body {
 }
 
 .project-image-wide {
-    width: 155%;
-    max-width: 1300px;
-    height: 400px;
-    margin: 1rem 0;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    height: 246px;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -691,13 +685,10 @@ body {
 }
 
 .project-image-scouting {
-    width: 170%;
-    max-width: 1300px;
-    height: 525px;
-    margin: 1rem 0;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    height: 220px;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -706,14 +697,11 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.project-image-hitter-long {
-    width: 170%;
-    max-width: 1300px;
-    height: 600px;
-    margin: 1rem 0;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+.project-image-hitter-2 {
+    width: 100%;
+    max-width: 800px;
+    height: 150px;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -723,13 +711,10 @@ body {
 }
 
 .project-image-hitter {
-    width: 170%;
-    max-width: 1300px;
-    height: 525px;
-    margin: 1rem 0;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    height: 210px;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -752,13 +737,10 @@ body {
 }
 
 .project-image-report {
-    width: 140%;
-    max-width: 1000px;
-    height: 600px;
-    margin: 1rem 0;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    height: 580px;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -768,13 +750,10 @@ body {
 }
 
 .project-image-blob {
-    width: 130%;
-    max-width: 900px;
-    height: 400px;
-    margin: 1rem 0;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    height: 356px;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -797,13 +776,10 @@ body {
 }
 
 .project-image-xbatb {
-    width: 150%;
-    max-width: 1300px;
-    height: 400px;
-    margin: 1rem 0;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    height: 246px;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -813,13 +789,10 @@ body {
 }
 
 .project-image-pct {
-    width: 135%;
-    max-width: 1000px;
-    height: 350px;
-    margin: 1rem 0;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    height: 280px;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
