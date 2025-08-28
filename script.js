@@ -23,25 +23,32 @@ const projects = [
     },
     {
         id: 4,
+        title: "Language-to-SQL Model",
+        description: "Created a language-to-SQL model using RAG to query Oregon Baseball's internal database for staff with little to no SQL experience.",
+        image: "images/vanna.png",
+        pageUrl: "projects/Vanna.html"
+    },
+    {
+        id: 5,
         title: "Stuff+",
         description: "Developed a college baseball Stuff+ model to predict the expected run value of a pitch from its metrics, and designed post-game Stuff reports for the Springfield Drifters (WCL) to support player development for coaches and athletes.",
         image: "images/StuffReport.png",
         pageUrl: "projects/Stuff.html"
     },
     {
-        id: 5,
+        id: 6,
         title: "Pitch Predictor",
         description: "A deep learning model that predicts whether a pitcher will throw a Fastball or Off-Speed pitch based on game situation context. The model uses a smiple PyTorch neural network to analyze pitch sequencing patterns and provide real-time predictions for strategic decision-making.",
         image: "images/Predictor.png",
         pageUrl: "projects/Predictor.html"
     },
     {
-        id: 6,
+        id: 7,
         title: "xBA and xTB (SLG)",
         description: "Simple KNN model that predicts the probability of a batted ball being a hit (xBA) or a single, double, triple, or home run (xTB) on predictos Launch Angle and Exit Velocity.",
         image: "images/xBA_simple.png",
         pageUrl: "projects/xBATB.html"
-    }
+    },
 ];
 
 // DOM elements
