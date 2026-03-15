@@ -16,6 +16,10 @@ body {
     background-color: #1a202c;
 }
 
+h3 {
+    font-weight: 1200;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -798,7 +802,8 @@ body {
 .project-image-quacktrax-catching2,
 .project-image-quacktrax-catching3,
 .project-image-quacktrax-pitchaccuracy,
-.project-image-quacktrax-pitchleaderboard {
+.project-image-quacktrax-pitchleaderboard,
+.project-image-quacktrax-bpscore {
     width: 100%;
     max-width: 800px;
     margin: 1rem auto;
@@ -816,7 +821,8 @@ body {
 .project-image-quacktrax-catching2 img,
 .project-image-quacktrax-catching3 img,
 .project-image-quacktrax-pitchaccuracy img,
-.project-image-quacktrax-pitchleaderboard img {
+.project-image-quacktrax-pitchleaderboard img,
+.project-image-quacktrax-bpscore img {
     width: 100%;
     height: auto;
     display: block;
