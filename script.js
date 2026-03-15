@@ -11,7 +11,7 @@ const projects = [
         id: 2,
         title: "QuackTrax Dashboard",
         description: "Interactive dashboard with over 20 unique pages built for Oregon Baseball's players and staff to easily access and analyze data through a user-friendly interface.",
-        image: "images/quacktraxhome.jpg",
+        image: "images/quacktraxpitcher1.jpg",
         pageUrl: "projects/QuackTrax.html"
     },
     {
