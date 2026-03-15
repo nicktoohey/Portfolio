@@ -788,6 +788,66 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* QuackTrax project images - proportional to each image's aspect ratio */
+.project-image-quacktrax-hitter1,
+.project-image-quacktrax-hitter2,
+.project-image-quacktrax-hitter3,
+.project-image-quacktrax-pitcher1,
+.project-image-quacktrax-pitcher2,
+.project-image-quacktrax-catching1,
+.project-image-quacktrax-catching2,
+.project-image-quacktrax-catching3,
+.project-image-quacktrax-pitchaccuracy,
+.project-image-quacktrax-pitchleaderboard {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-quacktrax-hitter1 img,
+.project-image-quacktrax-hitter2 img,
+.project-image-quacktrax-hitter3 img,
+.project-image-quacktrax-pitcher1 img,
+.project-image-quacktrax-pitcher2 img,
+.project-image-quacktrax-catching1 img,
+.project-image-quacktrax-catching2 img,
+.project-image-quacktrax-catching3 img,
+.project-image-quacktrax-pitchaccuracy img,
+.project-image-quacktrax-pitchleaderboard img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Arsenal project images - proportional to each image's aspect ratio */
+.project-image-arsenal-leaderboard,
+.project-image-arsenal-pitchleaderboard,
+.project-image-arsenal-explorer,
+.project-image-arsenal-editor {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-arsenal-leaderboard img,
+.project-image-arsenal-pitchleaderboard img,
+.project-image-arsenal-explorer img,
+.project-image-arsenal-editor img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+
 .project-image-vanna {
     width: 100%;
     max-width: 800px;

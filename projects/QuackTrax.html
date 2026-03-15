@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xBA and xTB (SLG)</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3V6Z34P7W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M3V6Z34P7W');
+</script>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>NT</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="container">
+            <a href="../index.html#projects" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            <h1>QuackTrax</h1>
+            <p>
+                Interactive dashboard with over 20 unique pages built for Oregon Baseball's players and staff to easily access and analyze data through a user-friendly interface.
+            </p>
+        </div>
+    </section>
+
+    <section class="project-page-content">
+        <div class="project-section">
+            <h2>Hitting</h2>
+            <div class="project-image-quacktrax-hitter1">
+                <img src="../images/quacktraxhitter1.jpg" alt="Hitting1">
+            </div>
+            <div class="project-image-quacktrax-hitter2">
+                <img src="../images/quacktraxhitter2.jpg" alt="Hitting2">
+            </div>
+            <div class="project-image-quacktrax-hitter3">
+                <img src="../images/quacktraxhitter3.jpg" alt="Hitting3">
+            </div>
+            <h2>Pitching</h2>
+            <div class="project-image-quacktrax-pitcher1">
+                <img src="../images/quacktraxpitcher1.jpg" alt="Pitcher1">
+            </div>
+            <div class="project-image-quacktrax-pitcher2">
+                <img src="../images/quacktraxpitcher2.jpg" alt="Pitcher2">
+            </div>
+            <h2>Catching</h2>
+            <div class="project-image-quacktrax-catching1">
+                <img src="../images/quacktraxcatching1.jpg" alt="Catching1">
+            </div>
+            <div class="project-image-quacktrax-catching2">
+                <img src="../images/quacktraxcatching2.jpg" alt="Catching2">
+            </div>
+            <div class="project-image-quacktrax-catching3">
+                <img src="../images/quacktraxcatcher3.jpg" alt="Catching3">
+            </div>
+            <h2>Pitch Accuracy</h2>
+            <div class="project-image-quacktrax-pitchaccuracy">
+                <img src="../images/quacktraxpitchaccuracy.jpg" alt="PitchAccuracy">
+            </div>
+            <h2>Pitch Leaderboard</h2>
+            <div class="project-image-quacktrax-pitchleaderboard">
+                <img src="../images/quacktraxleaderboard.jpg" alt="PitchLeaderboard">
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 

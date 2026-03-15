@@ -9,38 +9,38 @@ const projects = [
     },
     {
         id: 2,
-        title: "Arsenal+ Dashboard",
-        description: "Arsenal+, Mix+, Match+ dashboard to evaluate induvial pitcher arsenals, overall arsenal leaderboards, induvidual pitch mix+ and match+ leaderboards, and an editor to create and adjust arsenals, allowing users to see how mix-and-match metrics change in real time",
-        image: "images/ArsenalExplorer.png",
-        pageUrl: "projects/Arsenal.html"
+        title: "QuackTrax Dashboard",
+        description: "Interactive dashboard with over 20 unique pages built for Oregon Baseball's players and staff to easily access and analyze data through a user-friendly interface.",
+        image: "images/quacktraxhome.jpg",
+        pageUrl: "projects/QuackTrax.html"
     },
     {
         id: 3,
-        title: "Advance Scouting",
+        title: "Advanced Scouting",
         description: "Advance scouting reports for University of Oregon (NCAA DI) and Springfield Drifters (WCL) to help coaches and players create attack plans and prepare for upcoming series.",
         image: "images/PitchersScout1.png",
         pageUrl: "projects/Scouting.html"
     },
     {
         id: 4,
-        title: "Language-to-SQL Model",
-        description: "Created a language-to-SQL model using RAG to query Oregon Baseball's internal database for staff with little to no SQL experience.",
-        image: "images/vanna.png",
-        pageUrl: "projects/Vanna.html"
-    },
-    {
-        id: 5,
         title: "Stuff+",
         description: "Developed a college baseball Stuff+ model to predict the expected run value of a pitch from its metrics, and designed post-game Stuff reports for the Springfield Drifters (WCL) to support player development for coaches and athletes.",
         image: "images/StuffReport.png",
         pageUrl: "projects/Stuff.html"
     },
     {
-        id: 6,
+        id: 5,
         title: "Pitch Predictor",
         description: "A deep learning model that predicts whether a pitcher will throw a Fastball or Off-Speed pitch based on game situation context. The model uses a smiple PyTorch neural network to analyze pitch sequencing patterns and provide real-time predictions for strategic decision-making.",
         image: "images/Predictor.png",
         pageUrl: "projects/Predictor.html"
+    },
+    {
+        id: 6,
+        title: "Language-to-SQL Model",
+        description: "Created a language-to-SQL model using RAG to query Oregon Baseball's internal database for staff with little to no SQL experience.",
+        image: "images/vanna.png",
+        pageUrl: "projects/Vanna.html"
     },
     {
         id: 7,
@@ -48,6 +48,13 @@ const projects = [
         description: "Simple KNN model that predicts the probability of a batted ball being a hit (xBA) or a single, double, triple, or home run (xTB) on predictos Launch Angle and Exit Velocity.",
         image: "images/xBA_simple.png",
         pageUrl: "projects/xBATB.html"
+    },
+    {
+        id: 8,
+        title: "Arsenal+ Dashboard",
+        description: "Arsenal+, Mix+, Match+ dashboard to evaluate induvial pitcher arsenals, overall arsenal leaderboards, induvidual pitch mix+ and match+ leaderboards, and an editor to create and adjust arsenals, allowing users to see how mix-and-match metrics change in real time",
+        image: "images/ArsenalExplorer.png",
+        pageUrl: "projects/Arsenal.html"
     },
 ];
 
