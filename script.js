@@ -4,6 +4,7 @@ const projects = [
         id: 1,
         title: "Undergraduate Thesis",
         description: "Evaluating and predicting pitcher-hitter matchups in college baseball using pitch accuracy data collected from Oregon home games and scrimmages",
+        timeframe: "Spring 2025-Present",
         image: "images/AccuracyOverlay.png",
         pageUrl: "projects/thesis.html"
     },
@@ -11,6 +12,7 @@ const projects = [
         id: 2,
         title: "QuackTrax Dashboard",
         description: "Interactive dashboard with over 20 unique pages built for Oregon Baseball's players and staff to easily access and analyze data through a user-friendly interface.",
+        timeframe: "Fall 2025-Present",
         image: "images/quacktraxpitcher1.jpg",
         pageUrl: "projects/QuackTrax.html"
     },
@@ -18,6 +20,7 @@ const projects = [
         id: 3,
         title: "Advanced Scouting",
         description: "Advance scouting reports for University of Oregon (NCAA DI) and Springfield Drifters (WCL) to help coaches and players create attack plans and prepare for upcoming series.",
+        timeframe: "Winter 2025-Present",
         image: "images/PitchersScout1.png",
         pageUrl: "projects/Scouting.html"
     },
@@ -25,6 +28,7 @@ const projects = [
         id: 4,
         title: "Stuff+",
         description: "Developed a college baseball Stuff+ model to predict the expected run value of a pitch from its metrics, and designed post-game Stuff reports for the Springfield Drifters (WCL) to support player development for coaches and athletes.",
+        timeframe: "Summer 2025",
         image: "images/StuffReport.png",
         pageUrl: "projects/Stuff.html"
     },
@@ -32,27 +36,39 @@ const projects = [
         id: 5,
         title: "Pitch Predictor",
         description: "A deep learning model that predicts whether a pitcher will throw a Fastball or Off-Speed pitch based on game situation context. The model uses a smiple PyTorch neural network to analyze pitch sequencing patterns and provide real-time predictions for strategic decision-making.",
+        timeframe: "Winter 2025",
         image: "images/Predictor.png",
         pageUrl: "projects/Predictor.html"
     },
     {
         id: 6,
+        title: "Data Science for Social Justice",
+        description: "Data Science Project for my Data Science for Social Justice class where I used data science methods explore the effect of the introduction of Mobile Crisis Services of Lane County (MCSLC) on the call volume for CAHOOTs, a 911 alternative response system for mental health crises in Eugene, Oregon.",
+        timeframe: "Spring 2025",
+        image: "images/DailyCallsOverTime.jpg",
+        pageUrl: "projects/DataJustice.html"
+    },
+    {
+        id: 7,
         title: "Language-to-SQL Model",
         description: "Created a language-to-SQL model using RAG to query Oregon Baseball's internal database for staff with little to no SQL experience.",
+        timeframe: "Summer 2025",
         image: "images/vanna.png",
         pageUrl: "projects/Vanna.html"
     },
     {
-        id: 7,
+        id: 8,
         title: "xBA and xTB (SLG)",
         description: "Simple KNN model that predicts the probability of a batted ball being a hit (xBA) or a single, double, triple, or home run (xTB) on predictos Launch Angle and Exit Velocity.",
+        timeframe: "Fall 2024",
         image: "images/xBA_simple.png",
         pageUrl: "projects/xBATB.html"
     },
     {
-        id: 8,
+        id: 9,
         title: "Arsenal+ Dashboard",
         description: "Arsenal+, Mix+, Match+ dashboard to evaluate induvial pitcher arsenals, overall arsenal leaderboards, induvidual pitch mix+ and match+ leaderboards, and an editor to create and adjust arsenals, allowing users to see how mix-and-match metrics change in real time",
+        timeframe: "Summer 2025",
         image: "images/ArsenalExplorer.png",
         pageUrl: "projects/Arsenal.html"
     },
@@ -80,6 +96,7 @@ function renderProjects() {
             <div class="project-content">
                 <h3 class="project-title">${project.title}</h3>
                 <p class="project-description">${project.description}</p>
+                ${project.timeframe ? `<p class="project-timeframe">${project.timeframe}</p>` : ''}
             </div>
         </a>
     `).join('');
